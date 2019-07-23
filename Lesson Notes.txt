@@ -1,0 +1,33 @@
+Complete Typescript for Beginners – Udemy July 2019
+
+Typescript is a superset of Javascript. Ie, it extends Javascript and adds new features.
+
+Dynamic vs static languages: Static are rigid but catch development errors before runtime. Dynamic is flexible but prone to errors because it doesn't internally check itself, like typos or mismatched types. Static is more maintainable. Dynamic is/can  be quicker.
+
+Javascript is dynamic. It's great for web browsing. But it's started to move beyond web only. Typescript is/can be a better alternative because it is strict.
+
+TS is a transpiled language. You'll need a text editor and a transpiler, as well as Typescript itself. Most anything will work, you might need to download an extension. Teacher like WebStorm, but it isn't free. You will use Visual Studio Code.
+
+TS can't be read directly by a browser. It needs to transpile to Javascript, which can be.
+
+Typescriptlang.org  –   to download. And read documentation.
+
+Or... use NodeJS & npm:
+	“npm install -g typescript”
+	“tsc”  –  confirms Typescript is installed, version and some instructions.
+
+He recommends some Visual Studio Code extensions:
+	Live Server – launches a local server.
+	HTML Snipppets – **may be outdated by VSCode's basic HTML extension, already installed.
+	JS-CSS-HTML Formatter – formats these languages
+	Terminal – just called “Terminal” in VSCode
+	VSCode-icons – puts icons before file names. **VSCode seems to already do that.
+
+Transpiling:
+	You created a file already named app.ts.
+	In cmd: “tsc ./app.ts”
+	That creates an app.js file! Compare the two to see syntax differences.
+	To transpile multiple files/transpile automatically:
+	In cmd: “tsc -w ./app.ts”   --starts compiling in watch mode.
+	Make another change to app.ts while the -w command is running...
+	See the automatic translation in the js file!
