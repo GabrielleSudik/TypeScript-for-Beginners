@@ -1,4 +1,4 @@
-Complete Typescript for Beginners – Udemy July 2019
+Complete Typescript for Beginners ï¿½ Udemy July 2019
 
 Typescript is a superset of Javascript. Ie, it extends Javascript and adds new features.
 
@@ -10,24 +10,75 @@ TS is a transpiled language. You'll need a text editor and a transpiler, as well
 
 TS can't be read directly by a browser. It needs to transpile to Javascript, which can be.
 
-Typescriptlang.org  –   to download. And read documentation.
+Typescriptlang.org  ï¿½   to download. And read documentation.
 
 Or... use NodeJS & npm:
-	“npm install -g typescript”
-	“tsc”  –  confirms Typescript is installed, version and some instructions.
+	"npm install -g typescript"
+	"tsc"  ï¿½  confirms Typescript is installed, version and some instructions.
 
 He recommends some Visual Studio Code extensions:
-	Live Server – launches a local server.
-	HTML Snipppets – **may be outdated by VSCode's basic HTML extension, already installed.
-	JS-CSS-HTML Formatter – formats these languages
-	Terminal – just called “Terminal” in VSCode
-	VSCode-icons – puts icons before file names. **VSCode seems to already do that.
+	Live Server ï¿½ launches a local server.
+	HTML Snipppets ï¿½ **may be outdated by VSCode's basic HTML extension, already installed.
+	JS-CSS-HTML Formatter ï¿½ formats these languages
+	Terminal ï¿½ just called ï¿½Terminalï¿½ in VSCode
+	VSCode-icons ï¿½ puts icons before file names. **VSCode seems to already do that.
 
 Transpiling:
 	You created a file already named app.ts.
-	In cmd: “tsc ./app.ts”
+	In cmd: "tsc ./app.ts"
 	That creates an app.js file! Compare the two to see syntax differences.
-	To transpile multiple files/transpile automatically:
-	In cmd: “tsc -w ./app.ts”   --starts compiling in watch mode.
+	
+	To transpile automatically:
+	In cmd: "tsc -w ./app.ts"   --starts compiling in watch mode.
 	Make another change to app.ts while the -w command is running...
 	See the automatic translation in the js file!
+
+tsconfig.json:
+	Where you configure a bunch of instructions for your code.
+	Check it out.
+	For example, "compilerOptions" tells the app what to ddo with ALL existing or new TS files
+	so you don't have to transpile each one into JS.
+	"tsc -w" to watch everything, and do what tsconfig.json tells the app to do.
+	If you watch the terminal window, it will tell you errors
+	and you can even watch the errors fix in the terminal as you change and save the program.
+	And if you create a TS file, you can see the matching JS file pop right up in the solution.
+	AND if you change anything in tsconfig, like the JS version,
+	the JS files will update too. (Like var in JS5 is let in JS6).
+
+ECMAScript6 aka ES6 aka ECMA6 (2015)
+	Typescript is built on some JS features called EcmaScript.
+	ECMA manages the JS features.
+	European Computer Manufacturing Association: sets the standards.
+
+var vs let vs const:
+	VAR can change.
+	And, in JS, you can declare a var inside a block and use it outside the block.
+
+	CONST when you don't want value to be changed. JS will give you error msgs if you try.
+	Note you can have global and local const's.
+	Consts can be (among other things) arrays and objects. 
+	You CAN update the array or the object even when it's a const.
+	Using things like "array.push"
+	You CANNOT re-assign the base array/object name to a new array/object.
+
+	LET is like a VAR but it's only available within its own scope.	
+	LET will allow use only within a block if that's where it is declared.
+	VERY USEFUL in for loops, where (var i = 0; ...) can lead to problems where 
+	i is always the final value of the loop, because it becomes a global variable.
+	Use LET instead (let i = 0; ...) and i will remain inside the loop only.
+
+Template Strings	
+	It's just string concatination with this syntax:
+	`Hello, ${name}.`
+	
+Spread operator:
+	Used when you have arrays within arrays.
+	It will "spread out" all of the array elements into one view.
+
+Maps:
+	key-value pairs.
+	Regular objects are a lot like maps. Some differences:
+	Keys of objects are strings and singles, but can be any value
+	for maps, including functions.
+	Maps can be directly iterable, including arrays if they are key-value pairs.
+	And they have more ways to add and remove values.

@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "target": "es5"  //the version of JS we're going to write for
+        //not necessarily the most recent, because older browsers can't handle it.
+    }
+}
