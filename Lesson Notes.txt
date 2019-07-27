@@ -2,11 +2,16 @@ Complete Typescript for Beginners � Udemy July 2019
 
 Typescript is a superset of Javascript. Ie, it extends Javascript and adds new features.
 
-Dynamic vs static languages: Static are rigid but catch development errors before runtime. Dynamic is flexible but prone to errors because it doesn't internally check itself, like typos or mismatched types. Static is more maintainable. Dynamic is/can  be quicker.
+Dynamic vs static languages: Static are rigid but catch development errors before runtime. 
+Dynamic is flexible but prone to errors because it doesn't internally check itself, like typos or mismatched types. 
+Static is more maintainable. Dynamic is/can be quicker.
 
-Javascript is dynamic. It's great for web browsing. But it's started to move beyond web only. Typescript is/can be a better alternative because it is strict.
+Javascript is dynamic. It's great for web browsing. But it's started to move beyond web only. 
+Typescript is/can be a better alternative because it is strict.
 
-TS is a transpiled language. You'll need a text editor and a transpiler, as well as Typescript itself. Most anything will work, you might need to download an extension. Teacher like WebStorm, but it isn't free. You will use Visual Studio Code.
+TS is a transpiled language. You'll need a text editor and a transpiler, as well as Typescript itself. 
+Most anything will work, you might need to download an extension. 
+Teacher like WebStorm, but it isn't free. You will use Visual Studio Code.
 
 TS can't be read directly by a browser. It needs to transpile to Javascript, which can be.
 
@@ -24,7 +29,7 @@ He recommends some Visual Studio Code extensions:
 	VSCode-icons � puts icons before file names. **VSCode seems to already do that.
 
 Transpiling:
-	You created a file already named app.ts.
+	You created a file named app.ts.
 	In cmd: "tsc ./app.ts"
 	That creates an app.js file! Compare the two to see syntax differences.
 	
@@ -67,18 +72,25 @@ var vs let vs const:
 	i is always the final value of the loop, because it becomes a global variable.
 	Use LET instead (let i = 0; ...) and i will remain inside the loop only.
 
-Template Strings	
+9. Template Strings	
 	It's just string concatination with this syntax:
 	`Hello, ${name}.`
 	
-Spread operator:
+10. Spread operator:
 	Used when you have arrays within arrays.
 	It will "spread out" all of the array elements into one view.
 
-Maps:
+11. Maps:
 	key-value pairs.
 	Regular objects are a lot like maps. Some differences:
-	Keys of objects are strings and singles, but can be any value
-	for maps, including functions.
+	Keys of objects are strings and singles, 
+	but keys can be any value for maps, including functions.
 	Maps can be directly iterable, including arrays if they are key-value pairs.
 	And they have more ways to add and remove values.
+
+12. Sets:
+	A collection of values.
+	No duplicates, even if added more than once.
+
+13. For..Of loop:
+	
