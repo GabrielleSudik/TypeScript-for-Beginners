@@ -93,4 +93,28 @@ var vs let vs const:
 	No duplicates, even if added more than once.
 
 13. For..Of loop:
+	It's a foreach loop.
+	Also lesson 14 is in script-13...
+
+15. Default parameters:
+	How your code will handle function calls when
+	no specific arguments are passed. Ie, the functions
+	will use the defaults.
+
+16. Arrow functions:
+	These are just plain old functions
+	but are written in a shorthand syntax.
+	See the script-16 for a walkthrough.
+
+17. Arrow functions and "this"
+	Basically, "this.whatever" needs to handled in certain ways
+	due to scope. One way is via use of an arrow function.
+
+18. Destructuring:
+	A way of assigning values to variables that's kind of like an array
+	but kind of not. 
+	Check out the code for the example.
+
+
+
 	
