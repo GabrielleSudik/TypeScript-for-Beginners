@@ -1,19 +1,19 @@
 //20: classes
 
 //you could fake a constructor:
-function rectangle(width, height){
+function rectangle(width, height) {
     this.width = width;
     this.height = height;
 }
 
 //then check it out:
-let rect = new rectangle(10,20);
+let rect = new rectangle(10, 20);
 console.log(rect); //you'll see the object
-    //ie, width 10 and height 20
+//ie, width 10 and height 20
 
 //instead let's make a class:
 class person {
-    constructor(name, age, job){
+    constructor(name, age, job) {
         this.name = name;
         this.age = age;
         this.job = job;
@@ -27,7 +27,7 @@ console.log(amy); //will print the object
 
 //class inheritance:
 class student extends person {
-    constructor(school, grade){
+    constructor(school, grade) {
         super('Gaby', 44, 'programmer');
         //super is a keyword that references the parent class
         //in this case you explicity stated the three elements.
@@ -49,7 +49,7 @@ console.log(gaby); //will print all 5 elements
 //in this example, your constructor takes the variables
 //not the explicit elements like above.
 class student2 extends person {
-    constructor(name, age, job, school, grade){
+    constructor(name, age, job, school, grade) {
         super(name, age, job);
         this.school = school;
         this.grade = grade;
@@ -64,20 +64,20 @@ console.log(iyad); //will print the object with all 5
 //getters and setters:
 //and functions in the class:
 class faculty extends person {
-    constructor(name, age, job, school){
+    constructor(name, age, job, school) {
         super(name, age, job);
         this.school = school;
     }
 
     //they go outside the constructor:
-    getName(){ return this.name }
-    setName(name){ this.name = name }
-    getAge(){ return this.age }
-    setAge(age){ this.age = age }
-    getJob(){ return this.job }
-    setJob(job){ this.job = job }
-    getSchool(){ return this.school }
-    setSchool(school){ this.school = this.school }
+    getName() { return this.name }
+    setName(name) { this.name = name }
+    getAge() { return this.age }
+    setAge(age) { this.age = age }
+    getJob() { return this.job }
+    setJob(job) { this.job = job }
+    getSchool() { return this.school }
+    setSchool(school) { this.school = this.school }
 
     //in console, you can iyad.getName()
     //and get "Iyad"
@@ -90,5 +90,17 @@ class faculty extends person {
     //or change information (set)
 
     //a function:
-    
+    getCalculateYearsUntilRetirement() {
+        let totalYears = 65;
+        let personYears = this.getAge();
+        let result; 
+        result = totalYears - personYears;
+        return result;
+    }
+
+    //in console, returns 65-44 = 21:
+    //gaby.getCalculateYearsUntilRetirement(); 
+
+    //if you gaby.setAge(45) in console,
+    //it will return 65-45 = 20.
 }
