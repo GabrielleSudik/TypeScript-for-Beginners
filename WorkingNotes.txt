@@ -1,0 +1,30 @@
+DO: check that you've been writing TS and not JS files
+you might have gotten confused with another course.
+
+23 plus: typescript fundmentals
+
+Why use Typescript? What problems does it solve?
+
+JS has been around since like 1995. It's good and getting better. But...
+it has 5 weaknesses:
+	prototypal inheritance
+	equality and type juggling
+	management of modules
+	scope
+	lack of types
+
+TS aims to solve these weaknesses.
+
+to check out stuff in the console:
+"node name-of-script.ts" ta da.
+getting errors in the console?
+"tsc name-of-app.ts" to transpile to js.
+"tsc name-of-app.ts --watch" to keep updating.
+"node name-of-script.js" ta da.
+
+24 & 25: basic types
+
+GAB, you're getting some sort of compile error when you try to run the scripts at work.
+Probably because you're not using the real solution.
+Just a dummy you created to code in VS for the intellisense.
+NVM, you fixed it by adding a tsconfig.json file to the work project; I guess that did it.

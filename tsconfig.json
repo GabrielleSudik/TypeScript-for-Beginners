@@ -1,6 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "es5"  //the version of JS we're going to write for
-        //not necessarily the most recent, because older browsers can't handle it.
-    }
+  "compilerOptions": {
+    //all key-clue pairs.
+
+    "target": "es5", //the version of JS we're going to write for
+    //not necessarily the most recent, because older browsers can't handle it.
+
+    "module": "commonjs", //lets the program know what TS module to use.
+
+    "lib": [ "es6" ] //a compiler option
+    //not sure if/how this differs from "target"
+    //but this is from a different group of lessons so
+    //maybe target and lib are conflicting? one superceding? who knows.
+
+  },
+
+  "files": [
+    "core.ts"
+  ]
+  //files takes relative and absolute paths and says how to find stuff
+  //or something.
 }
+
+//lesson ends with prof telling me to go look up more on TS's documentation.
+  
+//end
